@@ -1,5 +1,21 @@
+import Header from "./components/Header";
+import Cart from "./pages/Cart";
+import Products from "./pages/Products";
+
+import GlobalStyle from "./styles/global";
+import * as S from "./styles/styles";
+
 const App = () => {
-  return <h1>app</h1>;
+  return (
+    <>
+      <Header />
+      <S.Main>
+        <Products />
+        <Cart />
+      </S.Main>
+      <GlobalStyle />
+    </>
+  );
 };
 
 export default App;
